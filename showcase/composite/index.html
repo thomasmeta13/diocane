@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Composite</title>
+    <meta name="description" content="Composite — A-Frame">
+    <script src="../../../dist/aframe-master.js"></script>
+  </head>
+  <body>
+    <a-scene renderer="colorManagement: true;">
+      <a-assets>
+        <img id="lake" src="https://media.istockphoto.com/vectors/vaporwave-abstract-checkered-background-vector-id1204024766?k=20&m=1204024766&s=170667a&w=0&h=28xA91TWHdQ9PJs8Aa9ROdA11COnaGu6nwzfknmXhD0=">
+        <img id="pdx" src="https://pbs.twimg.com/profile_banners/1403702583471099909/1631872326/600x200">
+        <a-asset-item id="sculpture" src="tuma.glb" ></a-asset-item>
+      </a-assets>
+
+      <a-sky src="#lake"></a-sky>
+      <a-gltf-model src="#sculpture" position="0 2 -6" scale="3 3 3" rotation="30 40 -20"></a-gltf-model>
+      <a-image src="#pdx" width="10" height="5" position="-2 1.2 -3"
+               scale="0.2 0.2 0.2"></a-image>
+    </a-scene>
+  </body>
+</html>
